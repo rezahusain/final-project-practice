@@ -1,0 +1,12 @@
+<h1>Patient forms</h1>
+
+<div id="patient_forms">
+  <% @patient_forms.each do |patient_form| %>
+    <%= render patient_form %>
+    <p>
+      <%= link_to "Show this patient form", patient_form %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New patient form", new_patient_form_path %>

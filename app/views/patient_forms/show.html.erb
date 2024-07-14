@@ -1,0 +1,8 @@
+<%= render @patient_form %>
+
+<div>
+  <%= link_to "Edit this patient form", edit_patient_form_path(@patient_form) %> |
+  <%= link_to "Back to patient forms", patient_forms_path %>
+
+  <%= button_to "Destroy this patient form", @patient_form, method: :delete %>
+</div>
