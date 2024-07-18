@@ -1,0 +1,5 @@
+class AddPatientToPatientForms < ActiveRecord::Migration[7.1]
+  def change
+    add_reference :patient_forms, :patient, null: false, foreign_key: true
+  end
+end

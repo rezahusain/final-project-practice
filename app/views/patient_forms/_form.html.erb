@@ -17,23 +17,23 @@
   </div>
 
   <div>
+    <%= form.label :body, style: "display: block" %>
+    <%= form.text_area :body %>
+  </div>
+
+  <div>
     <%= form.label :severity, style: "display: block" %>
     <%= form.number_field :severity %>
   </div>
 
   <div>
-    <%= form.label :hospital_name, style: "display: block" %>
-    <%= form.text_field :hospital_name %>
-  </div>
-
-  <div>
     <%= form.label :patient_id, style: "display: block" %>
-    <%= form.number_field :patient_id %>
+    <%= form.text_field :patient_id %>
   </div>
 
   <div>
     <%= form.label :admin_id, style: "display: block" %>
-    <%= form.number_field :admin_id %>
+    <%= form.text_field :admin_id %>
   </div>
 
   <div>

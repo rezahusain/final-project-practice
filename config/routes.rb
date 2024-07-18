@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  root to: "patient_forms#new"
   resources :patient_forms
+  root to: "patient_forms#show"
   devise_for :admins
   devise_for :patients
   
